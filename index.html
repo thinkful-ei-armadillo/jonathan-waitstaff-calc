@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+  <h1>Waitstaff Calculator</h1>
+  <main class="main" role="main">
+  <div class="container">
+    <h2>Enter the Meal Details</h2>
+    <section role="section" class="section-container">
+    <form name="meal-details-form" id="js-meal-details-form">
+      <div class="form-item">
+        <label for="meal-price">Base Meal Price: $</label>
+        <input type="number" name="meal-price" class="js-meal-price dollar-input" placeholder="0.00" min="0.01" max="999" step="0.01" required>
+      </div>
+      <div class="form-item">
+        <label for="tax-rate">Tax Rate: %</label>
+        <input type="number" name="tax-rate" class="js-tax-rate percent-input" placeholder="0" min="0.01" max="100" step="0.01" required>
+      </div>
+      <div class="form-item">
+        <label for="tip-percentage">Tip Percentage: %</label>
+        <input type="number" name="tip-percentage" class="js-tip-percentage percent-input" placeholder="0" min="0.01" max="100" step="0.01" required>
+      </div>
+      <button type="submit" class="js-submit form-btn">Submit</button><button class="js-cancel-btn form-btn">Cancel</button>
+      
+    </form>
+    </section>
+  </div>
+  <div class="container">
+    <section class="container">
+      <h2 class="results-h2">Customer Charges</h2>
+      <ul class="js-customer-charges">
+    </section>
+    </ul>
+      <section class="container" id="bottom">
+      <h2 class="results-h2">My Earnings Info</h2>
+      <ul class="js-my-earnings-info">
+      </section>
+    </ul>
+    <button class="js-reset-btn reset">Reset</button>
+  </div>
+  </main>
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
